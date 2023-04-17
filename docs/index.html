@@ -29,7 +29,7 @@
           <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
           <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
           <li><a class="nav-item waves-effect waves-light" href="#results">Results</a></li>
-          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+          <!-- <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li> -->
         </ul>
 
       </div>
@@ -48,16 +48,17 @@
 
       <div class="row center">
         <h5 class="header col l3 m4 s12">
-          <div class="author"><a href="http://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="blank">Bangyan Liao<sup>1*</sup></a></div>
+          <div class="author"><a href="http://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="blank">Bangyan
+              Liao<sup>1,2,*</sup></a></div>
         </h5>
 
         <h5 class="header col l2 m4 s12">
-          <div class="author"><a href="https://www.wslai.net/" target="blank">Delin Qu<sup>1,2*</sup></a></div>
+          <div class="author"><a href="https://www.wslai.net/" target="blank">Delin Qu<sup>1,3,*</sup></a></div>
         </h5>
 
         <h5 class="header col l2 m4 s12">
           <div class="author"><a href="https://www.cmlab.csie.ntu.edu.tw/~nothinglo/" target="blank">Yifei
-              Xue<sup>3</sup></a></div>
+              Xue<sup>4</sup></a></div>
         </h5>
 
         <h5 class="header col l2 m4 s12">
@@ -66,22 +67,29 @@
 
         <h5 class="header col l2 m4 s12">
           <div class="author"><a href="https://faculty.ucmerced.edu/mhyang/" target="blank">Yizhen
-              Lao<sup>1<span>&#8224;</span></sup></a></div>
+              Lao<sup>1,&#8224;</span></sup></a></div>
         </h5>
       </div>
 
       <div class="row center affiliation-row">
-        <h5 class="header col offset-l1 l3 m4 s12">
-          <div class="affiliation"><a href="https://www.ntu.edu.tw/" target="blank"><sup>1</sup>Hunan
-              University</a></div>
+        <h5 class="header col offset-l1 l2 m4 s12">
+          <div class="affiliation"><a href="https://www.ntu.edu.tw/" target="blank"><sup>1</sup>College of Computer
+              Science and Electronic Engineering, Hunan University</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="affiliation"><a href="https://vt.edu/" target="blank"><sup>2</sup>College of Electrical and
+              Information Engineering, Hunan University</a></div>
         </h5>
 
         <h5 class="header col l3 m4 s12">
-          <div class="affiliation"><a href="https://vt.edu/" target="blank"><sup>2</sup>Shanghai AI Lab</a></div>
+          <div class="affiliation"><a href="https://www.ucmerced.edu/" target="blank"><sup>3</sup>Shanghai AI
+              Laboratory</a></div>
         </h5>
 
-        <h5 class="header col l3 m4 s12">
-          <div class="affiliation"><a href="https://www.ucmerced.edu/" target="blank"><sup>3</sup>Natural Resources Development Center of Jiangxi Province</a></div>
+        <h5 class="header col l2 m4 s12">
+          <div class="affiliation"><a href="https://www.ucmerced.edu/" target="blank"><sup>4</sup>Jiangxi Provincial
+              Natural Resources Cause Development Center</a></div>
         </h5>
 
       </div>
@@ -97,7 +105,7 @@
       <!--   Icon Section   -->
       <div class="row center">
         <div class="col l12 m12 s12">
-          <img class="responsive-img" src="./images/teaser.png">
+          <img class="responsive-img" src="./images/intro.png">
         </div>
 
       </div>
@@ -110,32 +118,32 @@
       We propose an accurate and fast bundle adjustment (BA) solution that estimates the 6-DoF pose with an independent
       RS model of the camera and the geometry of the environment based on measurements from a rolling shutter (RS)
       camera. This tackles the challenges in the existing works, namely, relying on high frame rate video as input,
-      restrictive assumptions on camera motion, readout direction, and poor efficiency. To this end, we first verify the
-      positive influence of normalization to the image point on RSBA. Then we present a novel visual residual covariance
-      model to standardize the reprojection error during BA, which consequently improves the overall accuracy. Finally,
-      we demonstrate the combination of normalization and covariance standardisation weighting in RSBA
-      (<i>NW-RSBA</i>) can avoid common planar degeneracy without needing to constrain the filming manner. Besides, we
-      propose an acceleration strategy for <i>NW-RSBA</i> based on the sparsity of its Jacobian matrix and Schur
+      restrictive assumptions on camera motion and poor efficiency. To this end, we first verify the positive influence
+      of the image point normalization to RSBA. Then we present a novel visual residual covariance model to standardize
+      the reprojection error during RSBA, which consequently improves the overall accuracy. Besides, we demonstrate the
+      combination of <b>N</b>ormalization and covariance standardization <b>W</b>eighting in <b>RSBA</b>
+      (<i>NW-RSBA</i>) can avoid common planar degeneracy without the need to constrain the filming manner. Finally,
+      we propose an acceleration strategy for <i>NW-RSBA</i> based on the sparsity of its Jacobian matrix and Schur
       complement. The extensive synthetic and real data experiments verify the effectiveness and efficiency of the
       proposed solution over the state-of-the-art works.
     </div>
 
 
     <div class="row section scrollspy" id="paper">
-      <div class="title">Papers</div>
+      <div class="title">Paper</div>
       <br>
 
       <div class="row">
 
-        <div class="col m6 s12 center">
-          <a href="https://arxiv.org/abs/2004.01179" target="_blank">
+        <div class="center">
+          <a href="https://arxiv.org/abs/2209.08503" target="_blank">
             <img src="./images/icon_pdf.png">
           </a>
           <br>
-          <a href="https://arxiv.org/abs/2004.01179" target="_blank">CVPR 2020 (arXiv)</a>
+          <a href="https://arxiv.org/abs/2209.08503" target="_blank">CVPR 2023 (arXiv)</a>
         </div>
 
-        <div class="col m6 s12 center">
+        <!-- <div class="col m6 s12 center">
           <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Liu_Single-Image_HDR_Reconstruction_CVPR_2020_supplemental.pdf"
             target="_blank">
             <img src="./images/icon_pdf.png">
@@ -144,36 +152,30 @@
           <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Liu_Single-Image_HDR_Reconstruction_CVPR_2020_supplemental.pdf"
             target="_blank">Supplementary Material</a>
         </div>
+      </div> -->
+
       </div>
 
-    </div>
 
-
-    <div class="row">
-      <div class="subtitle">Citation</div>
-      <p>Yu-Lun Liu, Wei-Sheng Lai, Yu-Sheng Chen, Yi-Lung Kao, Ming-Hsuan Yang, Yung-Yu Chuang, and Jia-Bin Huang,
-        "Revisiting Rolling Shutter Bundle Adjustment: Toward Accurate and Fast Solution", in IEEE Conference on
-        Computer Vision and Pattern Recognition (CVPR), 2020</p>
-
-      <br>
-
-      <div class="subtitle">Bibtex</div>
-      <pre>
-@inproceedings{nw-rsba,
-    author    = {},
-    title     = {},
-    booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
-    year      = {2023}
-}
-</pre>
-    </div>
-
-
-
-    <div class="section row scrollspy" id="download">
-      <div class="title">Download</div>
       <div class="row">
+        <div class="subtitle">Citation</div>
+        <pre>
+    @InProceedings{Liao_2023_CVPR,
+        author    = {Liao, Bangyan and Qu, Delin and Xue, Yifei and Zhang, Huiqing and Lao, Yizhen},
+        title     = {Revisiting Rolling Shutter Bundle Adjustment: Toward Accurate and Fast Solution},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month     = {June},
+        year      = {2023},
+        pages     = {17785-17793}
+    }
+</pre>
+      </div>
 
+
+      <div class="section row scrollspy" id="download">
+        <div class="title">Download</div>
+        <div class="row">
+          <!-- 
         <div class="col m3 s12 center">
           <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR_/cvpr20_singleHDR_poster_mtk.pdf"
             target="_blank">
@@ -192,28 +194,28 @@
           <br>
           <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/SingleHDR_/cvpr20_singleHDR_video_slides_15min.pptx"
             target="_blank">Slides</a>
-        </div>
+        </div> -->
 
-        <div class="col m3 s12 center">
-          <a href="https://github.com/DelinQu/NW-RSBA" target="_blank">
-            <img src="./images/github.png">
-          </a>
-          <br>
-          <a href="https://github.com/DelinQu/NW-RSBA" target="_blank">Code</a>
-        </div>
+          <div class="center">
+            <a href="https://github.com/DelinQu/NW-RSBA" target="_blank">
+              <img src="./images/github.png">
+            </a>
+            <br>
+            <a href="https://github.com/DelinQu/NW-RSBA" target="_blank">Code</a>
+          </div>
 
-        <div class="col m3 s12 center">
+          <!-- <div class="col m3 s12 center">
           <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/hdr/SingleHDR_training_data.zip" target="_blank">
             <img src="./images/icon_zip.png">
           </a>
           <br>
           <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/hdr/SingleHDR_training_data.zip" target="_blank">Training
             data (14 GB)</a>
+        </div> -->
+
         </div>
 
-      </div>
-
-      <div class="row">
+        <!-- <div class="row">
         <div class="col m3 s12 center">
           <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/hdr/SingleHDR_results/HDR-Synth.zip" target="_blank">
             <img src="./images/icon_zip.png">
@@ -250,15 +252,15 @@
             target="_blank">Testing data (HDR-Eye) (0.52 GB)</a>
         </div>
 
+      </div> -->
+
       </div>
 
-    </div>
-
-    <div class="section row scrollspy" id="video">
-      <div class="title">Video</div>
-      <div class="row">
-
-        <div class="col m12 s12 center">
+      <div class="section row scrollspy" id="video">
+        <div class="title">Video</div>
+        <div class="row">
+          <li><b>Coming Soon.</b></li>
+          <!-- <div class="col m12 s12 center">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/UCHDhk6fciY" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -266,24 +268,70 @@
           <br>
           1-minute video
         </div>
+      </div> -->
 
-      </div>
-
-    </div>
-    <div class="section row scrollspy" id="results">
-      <div class="title">Results</div>
-
-      <div class="row center">
-        <div class="subtitle"><a href="./res/result.html">Results on the HDR-Synth, HDR-Real,
-            RAISE, HDR-Eye dataset, and examples from prior work and DxOMark</a></div>
-        <a class="summary" href="./res/result.html">
-          <div class="col s12 summary-transfer"></div>
-        </a>
-      </div>
-      <br>
-    </div>
+        </div>
 
 
+        <div class="section row scrollspy" id="results">
+          <div class="title">Results</div>
+          <div class="row center">
+            <img class="responsive-img" src="./images/table3.png">
+            <br>
+            <p>Absolute trajectory error (ATE) of different RSBA methods after Sim(3) alignment to ground truth. The
+              best results are shown in
+              green. Since some methods will lose tracking without processing the whole sequence, thus we highlight
+              the background of each cell with
+              different colours depending on its corresponding DUR value. Specifically, DUR > 0.9, 0.5 < DUR ⩽ 0.9 and
+                DUR ⩽ 0.5 are highlighted in light green , cyan , and orange .</p>
+          </div>
+
+          <div class="row center">
+            <img class="responsive-img" src="./images/table4.png">
+            <br>
+            <p>Quantitative ablation study of RSSfM on TUM-RSVI [21] and WHU-RSVI [3] datasets. ATE: absolute trajectory
+              error of estimated camera pose in meters (m), Runtime: time cost
+              in seconds (s). Best and second best results are shown in green and blue respectively.</p>
+          </div>
+
+
+          <div class="row center">
+            <img class="responsive-img" src="./images/fig11.png">
+            <br>
+            <p>Three-view graph of reconstructions using SfM pipeline with GSBA [16], NM-RSBA [2] and proposed NW-RSBA.
+            </p>
+          </div>
+
+          <div class="row center">
+            <img class="responsive-img" src="./images/sup2.png">
+            <br>
+            <p>Time cost of GSBA [4], DC-RSBA [3], NM-RSBA [1], NW-RSBA-0S (without Schur complement), NW-RSBA-1S
+              (one-stage Schur
+              complement to Jacobian matrices with series connection), and proposed NW-RSBA-2S (two-stage Schur
+              complement to Jacobian matrices
+              with parallel connection) with increasing camera number.</p>
+          </div>
+
+          <div class="row center">
+            <img class="responsive-img" src="./images/sup1.png">
+            <br>
+            <p>Camera pose (2 nd and 3 rd columns) and reconstruction (1 st column) errors of GSBA, DC-RSBA, DM-RSBA,
+              NM-RSBA and NW-
+              RSBA with increasing angular and linear velocity (1 st row) and noise levels in the image (2 nd row) in
+              general scenes, also with increasing
+              readout directions in degeneracy scene (3 rd row).</p>
+          </div>
+
+          <div class="row center">
+            <img class="responsive-img" src="./images/sup3.png">
+            <br>
+            <p>Ground truth and trajectories estimated by GSBA [4], NM-RSBA [1] and proposed NW-RSBA after Sim(3)
+              alignment on 10
+              sequences from TUM-RSVI [6] and 2 sequences from WHU-RSVI [2] datasets.</p>
+          </div>
+        </div>
+
+        <!-- 
     <div class="row section scrollspy" id="reference">
       <div class="title">References</div>
       <ul>
@@ -301,29 +349,21 @@
         </li>
 
       </ul>
-    </div>
+    </div> -->
 
-  </div>
-
-  <footer class="page-footer grey lighten-3">
-    <!--
-      <div class="row">
-        <div class="col l4 offset-l4 s12">
-          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=330&t=tt&d=fhGpuMgoLYXytRWhcIV-396rCSmJYtpAJdk3tTNbAnY"></script>
-        </div>
       </div>
-    -->
 
-    <div class="footer-copyright center black-text">
-      Copyright © Jason Lai 2017
-    </div>
-  </footer>
+      <footer class="page-footer grey lighten-3">
+        <div class="footer-copyright center black-text">
+          Copyright © Bangyan 2023
+        </div>
+      </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
 
 </body>
 
