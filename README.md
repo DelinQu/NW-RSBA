@@ -7,7 +7,7 @@ We propose an accurate and fast bundle adjustment (BA) solution that estimates t
 
 - [Project website](https://delinqu.github.io/NW-RSBA/)
 
-- [Paper](https://delinqu.github.io/NW-RSBA)
+- [Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_Revisiting_Rolling_Shutter_Bundle_Adjustment_Toward_Accurate_and_Fast_Solution_CVPR_2023_paper.pdf)
 
 ## Usage
 Download our code, and open rssfm/rssfm_main.mlx, replace the root_path variable with your own path.
